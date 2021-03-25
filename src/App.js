@@ -1,18 +1,27 @@
 import React from "react";
-import Header from "./components/Header";
-import AboutMe from "./components/AboutMe";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import {BroweserRouter as Router, Route, Switch} from "react-router-dom";
+import Header from "./components/Header/Header";
+import AboutMe from "./pages/AboutMe";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 import "./style.css";
+// switch this out for bootstrap
 
 function App() {
+
+  // may add a contact page, with links to resume
   return (
-    <div>
+    <Router>
       <Header/>
-      <AboutMe/>
-      <Projects/>
-      <Contact/>
-    </div>
+
+      <Switch>
+        <Route exact path="/" component={AboutMe} />
+        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/contact" component={Contact} />
+      </Switch>
+
+      <Footer />
+    </Router>
   );
 }
 

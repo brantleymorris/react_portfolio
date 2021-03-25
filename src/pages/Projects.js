@@ -1,4 +1,5 @@
 import React from "react";
+import "../assets/css/style.css";
 
 const Projects = () => {
 
@@ -58,18 +59,19 @@ const Projects = () => {
         }
     ];
 
+    // removed this from line 73 - style="mx-width:100%, height:auto"
     return (
         <div>
             {projects.map(projects => (
                 <div>
                     <div>
-                        <img src={projects.image} className="imageButton" id={projects.title}/>
+                        <img src={projects.image} className="imageButton" id={projects.title} alt={projects.title}/>
                     </div>
 
                     <div className="container" id="project">
                         <div className="row align-items-center">
                             <h1 className="title col-12 col-md-6">{projects.title}</h1>
-                            <img src={projects.image} className="col-12 col-md-6 img-fluid" style="mx-width:100%, height:auto"/>
+                            <img src={projects.image} alt={projects.title} className="col-12 col-md-6 img-fluid" />
                         </div>
 
                         <div className="row align-items-center">
@@ -85,7 +87,7 @@ const Projects = () => {
                                             <p>Try it out!</p>
                                         </a>
                                         <a href={projects.gitHubUrl} className="col-6">
-                                            <img src="./assets/images/GitHub-Mark-64px.png"/>
+                                            <img src="../assets/images/GitHub-Mark-64px.png" alt="Github Link"/>
                                         </a>
                                     </div>
                                 </div>
