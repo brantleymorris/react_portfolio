@@ -1,4 +1,19 @@
+/* add custom */
+
+:root {
+    --dark: 293241;
+    --light: E0FBFC;
+    --red: EE6C4D;
+    --blue: 3D5A80;
+    --silver: 98C1D9;
+}
+
+.root {
+    background-color: var(--light);
+}
+
 html {
+    background-color: var(--light);
     font-size: 62.5%;
     padding-bottom: 3rem;
     height: 100%;
@@ -12,8 +27,8 @@ html {
     height: 100%;
 } */
 
-header {
-    background-color: darkcyan;
+#header {
+    background-color: var(--dark);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -24,7 +39,7 @@ header {
 }
 
 h1 {
-    color: darkslategray;
+    color: var(--light);
     font-size: 6rem;
     width: 40rem;
     border: black;
@@ -49,11 +64,13 @@ nav {
 }
 
 #aboutMe {
-    background-color: darksalmon;
+    background-color: var(--light);
     margin: 5rem;
     border-radius: 1rem;
 }
+
 h2 {
+    background-color: var(--blue);
     font-size: 3rem;
     text-align: center;
 }
@@ -123,6 +140,11 @@ a {
     height: 200px;
     width: 200px;
     float: left;
+}
+
+#LinkedInLogo {
+    height: 64px;
+    width: 64px;
 }
 
 footer {

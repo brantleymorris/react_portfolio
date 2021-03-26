@@ -1,11 +1,13 @@
 import React from "react";
-import {BroweserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import "./style.css";
-// switch this out for bootstrap
+import "./assets/css/style.css";
+// switch this out for bootstrap, imported on index
+
 
 function App() {
 

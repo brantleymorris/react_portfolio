@@ -1,11 +1,12 @@
 import React from "react";
+import Me from "../assets/images/meAndClaire.jpeg";
 
 const AboutMe = () => {
     return(
         <div id="aboutMe">
             <h2>On a quest for why</h2>
         
-            <img src="../../public/assets/images/meAndClaire.jpeg" alt="Me and Claire" id="meAndClaire" />
+            <img src={Me} alt="Me and Claire" id="meAndClaire" />
 
             <p>I have always been interested in how things work. Which lead me to my first love, Biology. Learning how living things function of the macro and micro scale was truely fasinating. The levels of organization and sturcutre present at all levels of the world around us is simply beautiful.</p>
 

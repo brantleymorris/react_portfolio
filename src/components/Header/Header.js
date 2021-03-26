@@ -15,9 +15,9 @@ const Header = () => {
         //         <a id="contactNav" href="/contact">Contact</a>
         //     </nav>
         // </header>
-
-        <Container >
-            <Row fluid>
+        <div id="header">
+        <Container>
+            <Row>
                 <Col size="md-6">
                     <h1>Brantley Morris</h1>
                 </Col>
@@ -32,6 +32,7 @@ const Header = () => {
                 </Col>
             </Row>
         </Container>
+        </div>
     );
 };
 
